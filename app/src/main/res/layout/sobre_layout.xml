@@ -7,7 +7,13 @@
     android:orientation="vertical"
     tools:context=".SobreActivity">
 
-
+    <com.google.android.material.appbar.MaterialToolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:navigationIcon="@drawable/ic_baseline_arrow_back"
+        style="@style/Widget.MaterialComponents.Toolbar.Primary"
+        android:background="#BC0707"
+        android:id="@+id/idToolbar"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -15,6 +21,7 @@
         android:layout_gravity="center_horizontal"
         android:text="SOBRE"
         android:textSize="25sp"
+        android:layout_margin="7dp"
         android:textStyle="bold" />
 
     <TextView
