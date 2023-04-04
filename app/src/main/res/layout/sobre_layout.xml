@@ -13,7 +13,8 @@
         app:navigationIcon="@drawable/ic_baseline_arrow_back"
         style="@style/Widget.MaterialComponents.Toolbar.Primary"
         android:background="#BC0707"
-        android:id="@+id/idToolbar"/>
+        android:id="@+id/idToolbar"
+        app:title="SusteinCI"/>
 
     <TextView
         android:layout_width="wrap_content"
