@@ -7,37 +7,29 @@
     tools:context=".MenuActivity">
 
     <com.google.android.material.tabs.TabLayout
+        android:id="@+id/idTabLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/idTabLayout"
-        android:layout_above="@id/idConteiner">
+        android:contentDescription="@string/Lista">
 
         <com.google.android.material.tabs.TabItem
-            android:layout_width="wrap_content"
+            android:id="@+id/idDicas"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Dicas"
-            android:id="@+id/idDicas"/>
+            android:text="Dicas" />
 
         <com.google.android.material.tabs.TabItem
-            android:layout_width="wrap_content"
+            android:id="@+id/idMelhorar"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Melhorar"
-            android:id="@+id/idMelhorar"/>
+            android:text="Melhorar" />
     </com.google.android.material.tabs.TabLayout>
 
-    <FrameLayout
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/idViewPager2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/idConteiner"
-        android:layout_above="@id/idBottomNav"
-        android:background="#FFF"
-        />
-    
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:id="@+id/idBottomNav"
-        app:menu="@menu/menu_bottom_nav"/>
+        android:layout_below="@id/idTabLayout" />
+
 
 </RelativeLayout>
