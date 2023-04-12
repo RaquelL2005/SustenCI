@@ -4,16 +4,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/teal_201"
     android:orientation="vertical"
     tools:context=".MainActivity"
     android:gravity="center_horizontal|center_vertical">
 
     <ImageView
-        android:layout_width="280dp"
-        android:layout_height="300dp"
-        android:src="#000"
-        android:layout_margin="5dp"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:src="@drawable/bicileta"
         android:id="@+id/imgLogo"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SmartMobi"
+        android:textColor="#14897F"
+        android:textSize="50sp"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"/>
 
     <ProgressBar
         android:layout_width="100dp"
